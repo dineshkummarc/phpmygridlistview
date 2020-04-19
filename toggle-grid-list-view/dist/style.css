@@ -1,5 +1,4 @@
 .app {
-  background: #000;
   width: 980px;
   padding: 20px;
   margin: 0 auto;
@@ -18,7 +17,6 @@
   display: table-cell;
   vertical-align: middle;
   padding: 10px;
-  border-bottom: 2px solid #000;
 }
 .cont.list .card .imgBox .img {
   display: inline-block;
@@ -66,7 +64,6 @@
   display: table-cell;
   background: #fff;
   padding: 6px;
-  border-right: 20px solid #000;
 }
 .cont.grid .card > div {
   position: relative;
@@ -90,8 +87,6 @@
   width: 100%;
   position: absolute;
   top: -150%;
-  background: #777;
-  color: #fff;
   text-transform: uppercase;
 }
 .cont.grid .card .stakes {
