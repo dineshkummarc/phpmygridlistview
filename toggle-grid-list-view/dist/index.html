@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Toggle grid/list view</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="app" ng-app="app">
+  <div ng-controller="ctrl">
+
+    <button type="button" class="btn btn-danger glyphicon" ng-click="isList = !isList" ng-class="{'glyphicon-list': !isList, 'glyphicon-th-large': isList}"></button>
+    
+    <div class="cont" ng-class="{list: isList, grid: !isList}">
+      <div class="cardRow">
+        <div class="card" ng-repeat="n in range">
+        <div class="imgBox">
+          <div class="img" style="background-image: url('http://lorempixel.com/640/480/sports/{{n}}')"></div>
+        </div>
+        <div class="title">
+          <h2>Greedy goblins {{n}}</h2>
+          <span>{{n+5}} decks</span>
+        </div>
+        <div class="stakes">
+          <span>Min-max stake</span>
+          <h3>US$ {{n}}.00 - US$ {{n+4}}00.00</h3>
+        </div>
+        <div class="jackpot">
+          <span>Jackpot</span>
+          <h4>US$ {{n+4}}00.00</h4>
+        </div>
+        <div class="buttons">
+          <div class="btnWrapper">
+            <button type="button" class="btn btn-default">info</button>
+            <button type="button" class="btn btn-primary">play</button>
+          </div>
+          <div>Category {{n}} <span class="glyphicon glyphicon-list-alt"></span></div>
+        </div>
+
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
