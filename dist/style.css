@@ -1,0 +1,104 @@
+.app {
+  width: 980px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.cont .cardRow {
+  display: table;
+  width: 100%;
+  padding: 20px 0;
+}
+.cont.list .card {
+  display: table-row;
+  background: #fff;
+}
+.cont.list .card > div {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 10px;
+}
+.cont.list .card .imgBox .img {
+  display: inline-block;
+  vertical-align: middle;
+  margin: -4px;
+  width: 100px;
+  height: 80px;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.cont.list .card .title h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+.cont.list .card .title span {
+  text-transform: uppercase;
+}
+.cont.list .card .stakes h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+.cont.list .card .stakes span {
+  text-transform: uppercase;
+}
+.cont.list .card .jackpot h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+.cont.list .card .jackpot span {
+  text-transform: uppercase;
+}
+.cont.list .card .buttons {
+  text-align: right;
+}
+.cont.list .card .buttons button {
+  margin-bottom: 10px;
+}
+.cont.grid {
+  margin-right: -20px;
+}
+.cont.grid .card {
+  display: table-cell;
+  background: #fff;
+  padding: 6px;
+}
+.cont.grid .card > div {
+  position: relative;
+}
+.cont.grid .card .imgBox {
+  border-bottom: 5px solid #444;
+}
+.cont.grid .card .imgBox .img {
+  padding: 100% 0 0;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.cont.grid .card .title h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+.cont.grid .card .title span {
+  display: block;
+  padding: 0 5px;
+  width: 100%;
+  position: absolute;
+  top: -150%;
+  text-transform: uppercase;
+}
+.cont.grid .card .stakes {
+  display: none;
+}
+.cont.grid .card .jackpot h4 {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+.cont.grid .card .jackpot span {
+  display: inline;
+  text-transform: uppercase;
+}
